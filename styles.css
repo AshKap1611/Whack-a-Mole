@@ -1,0 +1,82 @@
+:root {
+	--moleChoice: url("mole1.png");
+}
+
+.grid {
+	width: 606px;
+	height: 606px;
+	display: flex;
+	flex-wrap: wrap;
+	animation-name: spin;
+	animation-duration: 5000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	} to {
+		transform: rotate(360deg);
+	}
+}
+
+.square {
+	height: 200px;
+	width: 200px;
+	border: solid black 1px;
+}
+
+.mole {
+	background-size: cover;
+	background-image: var(--moleChoice);
+}
+
+.dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pause {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pause h2 {
+    margin: 0;
+}
+
+.dot2 {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.play {
+	height: 200px;
+	width: 200px;
+	background-color: greenyellow;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.play h2 {
+	margin: 0;
+}
+
+.moleOptions {
+	position: absolute;
+	top: 25%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+}
